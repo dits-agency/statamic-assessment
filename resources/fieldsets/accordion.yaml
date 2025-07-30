@@ -1,0 +1,24 @@
+title: Accordion
+fields:
+  -
+    handle: accordion_items
+    field:
+      type: replicator
+      display: 'Accordion items'
+      sets:
+        items:
+          display: Items
+          sets:
+            item:
+              display: Item
+              fields:
+                -
+                  handle: accordion_title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: accordion_text
+                  field:
+                    type: textarea
+                    display: Text

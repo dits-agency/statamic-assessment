@@ -1,0 +1,36 @@
+<div class="space-y-4 grid grid-cols-1 gap-2 mb-4">
+    {{ accordion_items }}
+    <div x-data="{ open: false }" class="rounded-lg overflow-hidden">
+        <button
+            type="button"
+            class="transition-border intersect-once flex w-full items-start justify-between bg-gray-200 px-3 py-2 text-left text-gray-900 shadow-sm duration-200 intersect:animate-fade-up rounded-t-md"
+            @click="open = !open"
+        >
+            <span class="font-medium text-gray-800">{{ accordion_title }}</span>
+            <svg
+                :class="{ 'rotate-180': open }"
+                class="w-5 h-5 text-gray-600 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                />
+            </svg>
+        </button>
+
+        <div
+            x-show="open"
+            x-collapse
+            x-cloak
+            class="ease overflow-hidden rounded-b-md bg-gray-50 p-2 md:p-6 shadow-sm transition-all duration-700"
+        >
+            {{ accordion_text }}
+        </div>
+    </div>
+    {{ /accordion_items }}
+</div>

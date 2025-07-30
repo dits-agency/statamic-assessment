@@ -15,12 +15,21 @@ return [
     |
     */
 
-    'enabled' => env('STATAMIC_API_ENABLED', false),
+    // 'enabled' => env('STATAMIC_API_ENABLED', false),
+    'enabled' => true,
 
     'resources' => [
-        'collections' => false,
+        'collections' => [
+            'news' => [
+                'enabled'         => true,
+                'allowed_filters' => [
+                    'tags',
+                ],
+            ],
+        ],
+
         'navs' => false,
-        'taxonomies' => false,
+        'taxonomies' => true,
         'assets' => false,
         'globals' => false,
         'forms' => false,

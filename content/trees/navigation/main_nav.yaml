@@ -9,3 +9,7 @@ tree:
       -
         id: eb4645ff-f086-455b-b7df-aa8523b9c869
         title: Subnav
+  -
+    id: ed068b54-bac1-4572-b92b-13292f1e1e96
+    title: News
+    url: news

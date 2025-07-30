@@ -1,0 +1,30 @@
+<div
+    x-data="carousel()"
+    x-init="init()"
+    class="swiper-container relative overflow-hidden rounded-xl"
+>
+    <div class="swiper-wrapper">
+        {{ carousel_items }}
+        <div class="swiper-slide flex flex-col items-center">
+            {{ image }} {{ if link }}
+            <a href="{{ link:url }}">
+                {{ /if }}
+                <img
+                    src="{{ url }}"
+                    alt="{{ alt }}"
+                    class="w-full h-64 object-cover rounded-lg"
+                />
+                {{ /image }} {{ if image_caption }}
+                <p class="text-center my-2 text-sm text-gray-500">
+                    {{ image_caption }}
+                </p>
+                {{ /if }} {{ if link }}
+            </a>
+            {{ /if }}
+        </div>
+        {{ /carousel_items }}
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>

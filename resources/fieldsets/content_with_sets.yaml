@@ -1,0 +1,41 @@
+title: 'Content with sets'
+fields:
+  -
+    handle: bard_content
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - underline
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: Content
+      sets:
+        content_items:
+          display: 'Content items'
+          sets:
+            accordion:
+              display: Accordion
+              icon: layout-flip-down
+              fields:
+                -
+                  import: accordion
+            image_carousel:
+              display: 'Image carousel'
+              icon: media-image-picture-gallery
+              fields:
+                -
+                  import: image_carousel

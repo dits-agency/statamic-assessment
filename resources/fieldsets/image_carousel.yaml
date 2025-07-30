@@ -1,0 +1,36 @@
+title: 'Image carousel'
+fields:
+  -
+    handle: carousel_items
+    field:
+      type: replicator
+      display: 'Carousel items'
+      sets:
+        items:
+          display: Items
+          sets:
+            item:
+              display: Item
+              fields:
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                    width: 50
+                -
+                  handle: link
+                  field:
+                    select_across_sites: true
+                    type: link
+                    display: Link
+                    width: 50
+                -
+                  handle: image_caption
+                  field:
+                    type: text
+                    display: 'Image caption'
+                    width: 50
