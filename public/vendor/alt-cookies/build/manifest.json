@@ -1,0 +1,17 @@
+{
+  "resources/css/alt-cookies-addon.css": {
+    "file": "assets/alt-cookies-addon-92090a1c.css",
+    "isEntry": true,
+    "src": "resources/css/alt-cookies-addon.css"
+  },
+  "resources/js/alt-cookies-addon.js": {
+    "file": "assets/alt-cookies-addon-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/alt-cookies-addon.js"
+  },
+  "resources/js/frontend-manager.js": {
+    "file": "assets/frontend-manager-6a2a0968.js",
+    "isEntry": true,
+    "src": "resources/js/frontend-manager.js"
+  }
+}

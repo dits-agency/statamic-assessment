@@ -1,0 +1,6 @@
+name: admin
+super: true
+id: 12268fa3-3007-471b-a3a7-f73495a4d10a
+password_hash: $2y$12$t/fp2dMaFaNIX9VmSXunN.vPPq8TaNaDmfTxxTEp8o6CLXBk.b72i
+preferences:
+  theme: light
